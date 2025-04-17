@@ -2,6 +2,7 @@
 
 ![WIP](https://img.shields.io/badge/status-work_in_progress-yellow)
 ![Python](https://img.shields.io/badge/python-3.10+-blue)
+![GitHub repo size](https://img.shields.io/github/repo-size/almarazj/velvet-noise-reverberation)
 ![License](https://img.shields.io/github/license/almarazj/velvet-noise-reverberation)
 
 > 🚧 **This project is a work in progress.**
