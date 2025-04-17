@@ -1,0 +1,29 @@
+Subject ,Age,System,Listener,Drum 1 ,Drum 2,Drum 3,Drum 4,Drum 5,Drum 6,Drum 7,Vocal 1,Vocal 2,Vocal 3,Vocal 4,Vocal 5,Vocal 6,Vocal 7,Flute 1,Flute 2,Flute 3,Flute 4,Flute 5,Flute 6,Flute 7
+1,19,over ear,some listening exp,1,1,1,1,1,1,1,1,1,1,1,1,0,1,,,,,,,
+2,27,over ear,musician,1,1,1,1,1,1,0,,,,,,,,1,1,0,0,0,0,1
+3,26,over ear,some listening exp,,,,,,,,1,1,1,0,1,1,0,1,0,0,0,1,0,1
+4,26,over ear,hobby,,,,,,,,0,1,1,0,1,0,1,1,1,0,1,0,0,1
+5,26,over ear,hobby,1,1,1,1,1,0,0,1,1,1,1,1,0,0,,,,,,,
+6,26,in ear ,musician,1,1,1,1,0,0,1,,,,,,,,1,1,1,1,0,1,1
+7,26,over ear,hobby,,,,,,,,0,0,1,0,1,0,0,1,1,0,0,1,0,0
+8,23,in ear ,musician,1,1,1,1,1,1,1,1,0,0,1,1,0,1,,,,,,,
+9,36,in ear ,some listening exp,,,,,,,,1,1,1,0,0,1,0,0,0,1,1,0,1,0
+10,44,over ear,some listening exp,1,1,1,1,0,1,1,,,,,,,,1,0,1,1,0,1,1
+11,29,over ear,hobby,1,1,1,1,1,1,0,,,,,,,,1,1,0,0,1,1,1
+12,32,over ear,some listening exp,1,1,1,1,1,0,1,1,1,1,1,1,1,1,,,,,,,
+13,34,over ear,some listening exp,1,1,1,1,1,1,1,,,,,,,,1,1,0,0,1,1,1
+14,42,over ear,some listening exp,,,,,,,,1,1,0,1,1,0,0,0,1,1,1,0,1,0
+15,41,in ear ,some listening exp,1,1,1,1,1,1,0,1,0,1,1,1,1,0,,,,,,,
+16,56,in ear ,none,,,,,,,,1,1,1,1,1,1,1,1,1,1,0,1,1,0
+17,59,in ear ,none,1,1,1,0,1,1,1,,,,,,,,0,0,1,1,1,0,0
+18,20,over ear,musician,,,,,,,,1,1,0,1,1,0,1,1,1,0,0,1,1,1
+19,19,over ear,none,1,0,1,0,1,1,0,1,1,1,1,1,1,1,,,,,,,
+20,23,in ear ,some listening exp,1,1,1,1,0,1,1,,,,,,,,1,0,1,1,1,0,0
+21,27,in ear ,musician,1,1,1,1,1,1,1,1,1,1,1,1,1,1,,,,,,,
+22,27,over ear,musician,,,,,,,,1,1,0,0,0,1,1,1,0,1,1,0,0,1
+23,26,over ear,hobby,1,1,1,1,0,0,1,,,,,,,,1,1,0,0,1,0,0
+24,29,over ear,some listening exp,,,,,,,,1,1,0,0,1,1,1,1,1,0,1,1,0,1
+25,31,over ear,some listening exp,1,1,1,1,1,1,1,1,1,1,1,1,0,0,,,,,,,
+26,37,in ear ,musician,1,1,1,1,1,1,1,0,1,1,1,0,1,0,,,,,,,
+27,17,over ear,musician,,,,,,,,0,0,1,0,0,1,0,1,1,0,1,1,1,1
+28,18,over ear,musician,1,1,1,1,1,1,1,,,,,,,,0,1,0,1,0,0,1
