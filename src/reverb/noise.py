@@ -36,19 +36,5 @@ def generate_velvet_noise(duration: int,
     return Y
 
 
-def exponentia_velvet_noise(duration: int, sample_rate: int, initial_interval: float, decay_rate: float) -> np.ndarray:
-    t = np.arange(0, duration, 1/sample_rate)
-    signal = np.zeros_like(t)
-    signal[0] = 10
-    current_time = 0
-    while current_time < duration:
-        index = int(current_time * sample_rate + np.random.rand() * initial_interval * sample_rate  * np.exp(-decay_rate * current_time))
-        if index < len(signal):
-            signal[index] = 2 * round(np.random.rand()) - 1
-        current_time += initial_interval * np.exp(-decay_rate * current_time)
-
-    return signal
-
-
 def generate_white_noise(duration: int, sample_rate: int) -> np.ndarray:
     return np.random.normal(0, 0.3, int(duration * sample_rate))
