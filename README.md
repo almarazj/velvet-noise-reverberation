@@ -24,7 +24,7 @@ You can find the full paper in the `paper/` folder.
 . ├── data/       # Original and generated audio data
   ├── notebooks/  # Analysis and visualization
   ├── paper/      # Original paper in pdf
-  ├── results/    # Plots and CSV results
+  ├── results/    # Plots, CSV and audio files results
   ├── scripts/    # Scripts to generate audio signals and plots
   ├── src/        # Source code to process audio signals
   |  ├── analytics/
@@ -44,6 +44,8 @@ Dependencies are managed using poetry:
 ```bash
 poetry install
 ```
+
+Activate environment:
 
 ```bash
 eval "$(poetry env activate)"
