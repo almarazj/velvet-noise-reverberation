@@ -24,4 +24,5 @@ def save_audio_file(audio_data: np.ndarray, sample_rate: int, path: str) -> str:
     """
     os.makedirs(os.path.dirname(path), exist_ok=True)
     sf.write(path, audio_data, sample_rate)
+    print(f"Audio saved to {path}")
     return os.path.abspath(path)

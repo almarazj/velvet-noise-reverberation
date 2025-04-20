@@ -1,6 +1,7 @@
 import numpy as np
 import pyloudnorm as pyln
-
+import warnings
+warnings.filterwarnings("ignore")
 
 def normalize(data: np.ndarray, sample_rate: int, LUFS: int=-18) -> np.ndarray:
     meter = pyln.Meter(sample_rate)

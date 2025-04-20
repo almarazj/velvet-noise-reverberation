@@ -54,13 +54,13 @@ eval "$(poetry env activate)"
 Example to generate a test stimulus using white noise:
 
 ```bash
-python scripts/generate_stimulus.py -f data/0_drum.wav -n White -v
+python scripts/generate_stimulus.py -f data/raw_drum.wav -n White -v
 ```
 
 Example to generate a test stimulus using velvet noise with a pulse density of 300 p/s:
 
 ```bash
-python scripts/generate_stimulus.py -f data/0_drum.wav -n Velvet -pd 300 -v
+python scripts/generate_stimulus.py -f data/raw_drum.wav -n Velvet -pd 300 -v
 ```
 
 ## 📊 Reproducing Results

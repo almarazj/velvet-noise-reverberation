@@ -33,10 +33,10 @@ def main():
 
         if args.noise == "Velvet":
             noise = generate_velvet_noise(args.reverberation_time, audio_data["fs"], args.pulse_density)
-            output_path = input_path.with_name(f"{input_path.stem}_{args.pulse_density}ps{input_path.suffix}")
+            output_audio_path = Path("results") / "audio-files" / f"{input_path.stem}_{args.pulse_density}ps{input_path.suffix}"
         elif args.noise == "White":
             noise = generate_white_noise(args.reverberation_time, audio_data["fs"])
-            output_path = input_path.with_name(f"{input_path.stem}_white_noise{input_path.suffix}")
+            output_audio_path = Path("results") / "audio-files" / f"{input_path.stem}_white_noise{input_path.suffix}"
 
         enveloped_noise = envelope(noise, audio_data["fs"], args.reverberation_time)
 
@@ -46,7 +46,7 @@ def main():
 
         normalized_reverberated_signal = normalize(reverberated_signal, audio_data["fs"])
 
-        save_audio_file(normalized_reverberated_signal, audio_data["fs"], output_path)
+        save_audio_file(normalized_reverberated_signal, audio_data["fs"], output_audio_path)
         
         if args.visualize:
             plots_dir = Path("results/plots")
@@ -54,7 +54,8 @@ def main():
 
             signals = [audio_data["data"], noise, rir, normalized_reverberated_signal]
             titles = ["Input Audio", f"{args.noise} noise", "Artificial RIR", "Reverberated Signal"]
-            plot_time_series(signals, audio_data["fs"], titles, plots_dir / f"{input_path.stem}.png", figsize=(12, 10))            
+            filename = plots_dir / f"{input_path.stem}_{args.pulse_density}ps.png" if args.noise == "Velvet" else plots_dir / f"{input_path.stem}_white_noise.png"
+            plot_time_series(signals, audio_data["fs"], titles, filename, figsize=(12, 10))            
 
     except Exception as e:
         print(f"Error processing audio_data: {e}", file=sys.stderr)
